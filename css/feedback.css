@@ -1,0 +1,128 @@
+.feedback {
+  padding: 70px 0;
+  background-image: url('/img/jpg/form-bg.jpg');
+}
+
+.feedback__container {
+  color: var(--color-text-wh, rgba(255, 255, 255, 0.75) );
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.feedback__title {
+  padding-right: 26px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.feedback__subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 51px;
+}
+
+.feedback__form {
+  display: block;
+  margin-bottom: 52px;
+}
+
+.feedback__input-wrapper {
+  max-width: 425px;
+  margin: 0 auto 48px;
+}
+
+.feeback__input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background: none;
+  color: #fff;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+}
+
+.feeback__input::placeholder {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.feeback__input:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.feedback__btn {
+  padding: 12px 38px;
+  font-weight: 500;
+  background-color: #15A9CB;
+  border: none;
+  color: #fff;
+  box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+  border-radius: 50px;
+}
+
+
+.feedback__link {
+  color: #4A76A8;
+  text-decoration: underline;
+}
+
+@media (max-width: 1356px) {
+  .feedback__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .feedback__subtitle,
+  .feeback__input {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .feedback__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback {
+    padding: 30px 0;
+  }
+
+  .feedback__title {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  
+  .feedback__subtitle {
+    margin-bottom: 35px;
+  }
+
+  .feedback__subtitle,
+  .feeback__input {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .feedback__input-wrapper {
+    max-width: 290px;
+  }
+
+  .feedback__text {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .feedback__btn {
+    padding: 10px 26px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
