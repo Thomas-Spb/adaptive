@@ -152,3 +152,33 @@
     position: relative;
   }
 }
+
+@media (max-width: 480px) {
+  .about__content {
+    margin-bottom: 30px;
+  }
+  .about__content-title {
+    margin-bottom: 16px;
+  }
+
+  .about__content-subtitle {
+    margin-bottom: 28px;
+  }
+  .about__content-subtitle::before {
+    left: 21px;
+  }
+
+  .about__content-subtitle::after {
+    right: 21px;
+  }
+
+  .about__list {
+    gap: 28px;
+  }
+
+  .about__item::after {
+    width: 108px;
+    height: 108px;
+    font-size: 57px;
+  }
+}
