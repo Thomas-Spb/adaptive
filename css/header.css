@@ -1,20 +1,22 @@
 .header {
-  background-image: url('/img/jpg/bg.jpg');
-  padding: 40px 0 120px;
+  position: absolute;
+  content: '';
+  padding-top: 40px;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: transparent;
+  z-index: 99;
 }
 
-.header__container {
-  color: var(--color-text-wh, rgba(255, 255, 255, 0.75));
-  position: relative;
-  z-index: 10;
-}
-
-.header__info {
+.header__wrapper {
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 116px;
   text-align: center;
+  color: var(--color-text-wh, rgba(255, 255, 255, 0.75));
 }
 
 .header__phone-icon,
@@ -38,7 +40,18 @@
   margin: 0 auto;
 }
 
-.header__content-title {
+.main {
+  background-image: url('/img/jpg/bg.jpg');
+  padding: 228px 0 120px;
+}
+
+.main__container {
+  color: var(--color-text-wh, rgba(255, 255, 255, 0.75));
+  position: relative;
+  z-index: 10;
+}
+
+.main__content-title {
   font-weight: 900;
   font-size: 52px;
   line-height: 61px;
@@ -46,14 +59,14 @@
   margin-bottom: 31px;
 }
 
-.header__content-subtitle {
+.main__content-subtitle {
   font-size: 22px;
   line-height: 31px;
   text-align: center;
   margin-bottom: 90px;
 }
 
-.header__content-btn {
+.main__content-btn {
   display: block;
   margin: 0 auto;
   font-size: 20px;
