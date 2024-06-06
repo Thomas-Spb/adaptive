@@ -16,14 +16,14 @@
   font-size: 35px;
   line-height: 41px;
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 
 .feedback__subtitle {
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: 51px;
+  margin-bottom: 49px;
 }
 
 .feedback__form {
@@ -33,7 +33,7 @@
 
 .fieldset {
   max-width: 425px;
-  margin: 0 auto 48px;
+  margin: 0 auto 51px;
 }
 
 .fieldset__input {
@@ -95,9 +95,14 @@
     padding: 30px 0;
   }
 
+  .container .feedback__container {
+    padding: 0 15px;
+  }
+
   .feedback__title {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 20px;
+    padding-right: 0;
   }
 
   .feedback__subtitle {
@@ -106,22 +111,42 @@
 
   .feedback__subtitle,
   .feeback__input {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .fieldset {
+    max-width: 425px;
+    margin: 0 auto 30px;
   }
 
-  .feedback__input-wrapper {
-    max-width: 290px;
+  .fieldset__input {
+    padding: 1px 25px;
+    border: 1px solid;
+    margin-bottom: 15px;
+    height: 28px;
   }
+}
+.fieldset__input:not(:last-child) {
+  margin-bottom: 15px;
+}
+.fieldset__input::placeholder {
+  font-size: 14px;
+}
 
-  .feedback__text {
-    font-size: 11px;
-    line-height: 13px;
-  }
+.feedback__input-wrapper {
+  max-width: 290px;
+}
 
-  .feedback__btn {
-    padding: 10px 26px;
-    font-size: 16px;
-    line-height: 19px;
-  }
+.feedback__text {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.feedback__btn {
+  padding: 10px 30px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.feedback__form {
+  margin-bottom: 28px;
 }

@@ -123,7 +123,7 @@
 
 @media (max-width: 480px) {
   .about {
-    padding: 30px 0 60px;
+    padding: 30px 0 45px;
   }
 
   .about__content-title {
@@ -154,8 +154,24 @@
 }
 
 @media (max-width: 480px) {
+  .about__item {
+    flex-basis: 166px;
+    height: 195px;
+  }
+  .about__item::before {
+    top: 40%;
+  }
+  .about__item::after {
+    width: 104px;
+    height: 104px;
+  }
+
+  .about__item-text {
+    font-size: 18px;
+    bottom: 11px;
+  }
   .about__content {
-    margin-bottom: 30px;
+    margin-bottom: 39px;
   }
   .about__content-title {
     margin-bottom: 16px;
@@ -164,14 +180,13 @@
   .about__content-subtitle {
     margin-bottom: 28px;
   }
-  .about__content-subtitle::before {
-    left: 21px;
-  }
 
+  .about__content-subtitle::before {
+    left: 22px;
+  }
   .about__content-subtitle::after {
     right: 21px;
   }
-
   .about__list {
     gap: 28px;
   }

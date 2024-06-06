@@ -1,6 +1,5 @@
 .header {
   position: absolute;
-  content: '';
   padding-top: 40px;
   top: 0;
   margin: 0 auto;
@@ -50,6 +49,8 @@
   position: relative;
   z-index: 10;
   max-width: 960px;
+  /* background: green;
+  border: 3px solid red; */
 }
 
 .main__content-title {
@@ -60,11 +61,16 @@
   margin-bottom: 31px;
 }
 
-.main__content-subtitle {
+.main__content-subtitle-one,
+.main__content-subtitle-two {
   font-size: 22px;
   line-height: 31px;
   text-align: center;
   margin-bottom: 90px;
+}
+
+.main__content-subtitle-two {
+  display: none;
 }
 
 .main__content-btn {
@@ -133,9 +139,7 @@
     padding-top: 15px;
     padding-bottom: 65px;
   }
-  div.container {
-    padding: 0 15px;
-  }
+
   .header__content-title {
     font-size: 25px;
     line-height: 35px;
@@ -147,6 +151,9 @@
 }
 
 @media (max-width: 480px) {
+  div.container {
+    padding: 0 15px;
+  }
   .header__phone-inner,
   .header__info-logo {
     display: none;
@@ -156,32 +163,43 @@
     display: block;
     cursor: pointer;
   }
-  .header__content-title {
+  .main__content-title {
     font-size: 20px;
     line-height: 23px;
   }
-  .header__content-subtitle {
+  .main__content-subtitle-one,
+  .main__content-subtitle-two {
     font-size: 14px;
     line-height: 20px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .header {
-    padding-bottom: 63px;
+    padding: 15px;
+  }
+  .main {
+    padding: 110px 0 65px;
   }
   .header__info {
     margin-bottom: 61px;
   }
 
-  .header__content-title {
+  .main__content-title {
     margin-bottom: 26px;
   }
-  .header__content-subtitle {
-    margin-bottom: 50px;
+  .main__content-subtitle-one {
+    display: none;
+  }
+  .main__content-subtitle-two {
+    display: block;
+    margin-bottom: 52px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
-  .header__content-btn {
-    padding: 12px 39px;
+  .main__content-btn {
+    padding: 8px 38px;
+    font-size: 16px;
   }
 }

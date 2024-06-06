@@ -1,6 +1,6 @@
 .footer {
-  padding: 45px 0;
-  background-color: #2F324B;
+  padding: 42px 0;
+  background-color: #2f324b;
   color: #fff;
   font-size: 12px;
   line-height: 8px;
@@ -30,13 +30,13 @@
 
 .footer__phone-text {
   font-size: 24px;
-  line-height: 31px;
+  line-height: 30px;
 }
 
 .footer__phone-link {
   font-size: 16px;
-  line-height: 24px;
-  border-bottom: 1px solid var(--color-text-wh, rgba(255, 255, 255, 0.75) );
+  line-height: 25px;
+  border-bottom: 1px solid var(--color-text-wh, rgba(255, 255, 255, 0.75));
 }
 
 .footer__phone-inner {
@@ -48,7 +48,7 @@
     padding: 25px 0 0;
   }
 
-  div.footer__container {
+  .footer__container {
     padding-bottom: 25px;
   }
 
@@ -65,17 +65,16 @@
 
   .footer__logo-wrapper {
     font-size: 8px;
-    line-height: 11px;
+    line-height: 3px;
   }
 
   .footer__bottom {
     padding: 15px 0;
     display: block;
-    background-color: #2A2C3F;
+    background-color: #2a2c3f;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
     opacity: 0.5;
   }
-  
 }
