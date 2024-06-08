@@ -43,6 +43,34 @@
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  div.container {
+    padding: 0 30px;
+  }
+
+  .footer {
+    padding: 37px 0;
+  }
+  .footer__container {
+    padding: 30px;
+  }
+  .footer__logo {
+    gap: 20px;
+  }
+  .footer__logo-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__phone-text {
+    font-size: 21px;
+  }
+
+  .footer__phone-link {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 25px 0 0;
