@@ -58,6 +58,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+  counter-reset: count;
 }
 
 .about__item {
@@ -68,7 +69,8 @@
 }
 
 .about__item::after {
-  content: '';
+  content: counter(count);
+  counter-increment: count;
   width: 122px;
   height: 122px;
   position: absolute;
@@ -78,6 +80,13 @@
   background-color: #23c7ec;
   border-radius: 50%;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 52px;
+  text-align: center;
+  color: #fff;
 }
 
 .about__item::before {
